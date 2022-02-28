@@ -814,7 +814,7 @@ var Charty = (function () {
     function renderBars(type, masterA, width, height, vStart, hPadding, offsetY, offsetX, isPreview, startIdx_, endIdx, scaleX) {
       var selectedIdx, x, p = 1 - V.progress,
         startIdx = xToIdxDown(vStart - hPadding / scaleX),
-        barWidth = UI.main.width / (endIdx - startIdx_ - 0.5),
+        barWidth = UI.main.width / (endIdx - startIdx_),
         max = 0, alpha, scaleY, STACK = new Array(AXL),
         selectX, selectY, selectH
 
